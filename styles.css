@@ -7,8 +7,18 @@ h1 {
   color: #333;
 }
 
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
 form {
-  margin: 20px;
+  margin: 50px;
 }
 
 label {
@@ -17,7 +27,7 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 5px 0;
 }
@@ -29,6 +39,18 @@ button {
   padding: 10px 20px;
   cursor: pointer;
 }
+.entry-form{
+  margin-top: 50px;
+  padding: 20px;
+  background-color: lightgray;
+}
+.display-area{
+  margin-top: 50px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+
 
 #message {
   color: #007bff;
@@ -38,4 +60,23 @@ button {
 
 #dataDisplay {
   margin: 20px;
+}
+
+table {
+  width: 80%; /* Set the width of the table */
+  margin: 0 auto; /* Center the table horizontally */
+  border-collapse: collapse; /* Collapse cell borders */
+}
+
+th, td {
+  border: 1px solid #ccc; /* Add borders to cells */
+  padding: 8px; /* Add some padding to cells */
+}
+
+th {
+  background-color: #f2f2f2; /* Gray background for table headers */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Gray background for even rows */
 }
