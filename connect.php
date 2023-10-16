@@ -99,8 +99,8 @@ database name: 'studentgrade'
                 // Close the database connection
                 $conn->close();
             ?>
-                    </tbody>
-                </table>
+        </tbody>
+    </table>
               
 </body>
 </html>

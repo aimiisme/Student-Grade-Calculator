@@ -24,10 +24,7 @@ database name: 'studentgrade'
         <label for="grade">Grade:</label>
         <input type="number" id="grade" required name="grade" /><br /><br />
         
-        <button type="submit" 
-       
-        >
-        Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
