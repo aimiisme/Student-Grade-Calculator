@@ -15,9 +15,10 @@ database name: 'studentgrade'
 </head>
 <body>
     <h1>Student Grade Display</h1>
-      <ul>
-        <li><a href="index.php">Back to Enter Data</a></li>
-      </ul>
+    <ul>
+        <li><a href="index.php">Enter Data</a></li>
+        <li><a href="connect.php">Display Data</a></li>
+    </ul>
 
     <!-- Table to display student data -->
     <table>
@@ -30,10 +31,6 @@ database name: 'studentgrade'
         <tbody>
             <!-- PHP code to fetch and display data from the database -->
             <?php
-                //Collect HTML form data
-                $studentid = $_POST['studentid'];
-                $grade = $_POST['grade'];
-
                 // Database connection settings
                 //AWS RDS URL
                 $db_host = 'studentgrade-db.clriokky0kyy.us-east-2.rds.amazonaws.com'; 
@@ -50,7 +47,11 @@ database name: 'studentgrade'
                 if ($conn->connect_error) {
                     echo "$conn->connect_error";
                     die("Connection failed: " . $conn->connect_error);
-                }else{
+                }
+                if(isset($_POST['studentid']) && isset($_POST['grade'])){
+                    //Insert data into database
+                    $studentid = $_POST['studentid'];
+                    $grade = $_POST['grade'];
                     // SQL statement to insert data into the StudentGrades table with attributes "StudentID" and "Grade"
                     $insertQuery = "INSERT INTO StudentGrades (StudentID, Grade) VALUES (?, ?)";
                             

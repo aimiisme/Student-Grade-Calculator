@@ -15,6 +15,10 @@ database name: 'studentgrade'
   </head>
   <body>
     <h1>Student Grade Calculator</h1>
+    <ul>
+        <li><a href="index.php">Enter Data</a></li>
+        <li><a href="connect.php">Display Data</a></li>
+    </ul>
     <div class="entry-form">
       <h2>Data Entry</h2>
       <form id="dataEntryForm" action="connect.php" method="post">
