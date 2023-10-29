@@ -1,10 +1,6 @@
 # Cloud Software Development Course Project (Assignment 2)
 AWS RDS with MySQL 
 
-AWS RDS URL: 'studentgrade-db.clriokky0kyy.us-east-2.rds.amazonaws.com'</br>
-user name: 'admin'</br>
-password: 'password' </br>
-database name: 'studentgrade'</br>
 # Student-Grade-Calculator
 <p>
   Author: Aimi Tran</br>
