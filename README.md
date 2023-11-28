@@ -1,4 +1,4 @@
-# Cloud Software Development Course Project (Assignment 2)
+# Cloud Software Development Course Project
 AWS RDS with MySQL 
 
 # Student-Grade-Calculator
